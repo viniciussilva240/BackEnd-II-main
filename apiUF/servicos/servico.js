@@ -1,18 +1,21 @@
-import  colecaoUf  from '../dados/dados.js';
+// import  colecaoUf  from '../dados/dados.js';
 
-export const buscarUfs = () => {
-  return colecaoUf;
-}
+// export const buscarUfs = () => {
+//   return colecaoUf;
+// }
 
-export const buscarUfsPorNome = (nomeUf) => {
-  return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
-};
+// export const buscarUfsPorNome = (nomeUf) => {
+//   return colecaoUf.filter(uf => uf.nome.toLowerCase().includes(nomeUf.toLowerCase()));
+// };
 
-export const buscarUfPorId = (id) => {
-  const idUF = parseInt(id);
-  return colecaoUf.find(uf => uf.id === idUF);
-}
+// export const buscarUfPorId = (id) => {
+//   const idUF = parseInt(id);
+//   return colecaoUf.find(uf => uf.id === idUF);
+// }
 
-const buscarUfPorsigla = (sigla) => {
+
+import colecaoUf from '../dados/dados.js';
+
+export const buscarUfPorsigla = (sigla) => {
   return colecaoUf.filter(uf => uf.sigla.toLowerCase() === sigla.toLowerCase());
 };
